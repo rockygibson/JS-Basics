@@ -1,0 +1,68 @@
+notes
+
+Reversing array
+	-arr.reverse;
+
+Push and Pop: back
+	-Pop
+		-takes the last value off the array and deletes it
+	-Push
+		-adds value to the end
+
+shift and unshift: front
+	-shift
+		-removes the first one
+	-unshift
+		-adds to the beginning of the array
+
+split and join
+	-split
+		-can split a string into an array
+	-join 
+		-can make an array into a string
+
+slice and splice
+	-slice goes all the way to the end of the array, removes values from array making a new array
+	var arr = [1,2,3,4,5,6,7,8,9];
+	arr.slice(3)
+		returns [4,5,6,7,8,9]
+	-splice: changes value of array
+	var arr = [1,2,3,4,5,6,7,8,9];
+	arr.splice(where to start, how many repalcing, with what)
+	arr.splice(2, 1)
+		returns [3]
+	arr.splice(2, 1, "Four")
+		makes arr [1,2,"Four",5,6,7,8,9]
+
+indexOf
+	-helps you find things in an array
+		-arr ["string", "best", "the", "is", "this"]
+		-arr.indexOf('best')
+			returns 1
+
+Loops
+	-for(start?, how long?, Interation)
+		-for(var i = 0; i < arr.length; i++) {
+		console.log('wow')
+		}
+		-for(var i = 0; i < arr.length; i++) {
+		console.log(arr[i])
+		}
+		-arr = [1,2,3,4,5,6,34,43,5,2,4,3,5,5,4]
+			-var replace4 = function(array) {
+				for(var i = 0; i < array.length; i++) {
+					if(array[i] === 4) {
+						array.splice(i, 1, "Four")
+					}
+				}
+			return array;
+			replace4(arr)
+			//this would return the array with all 4 replaced with "Four"
+			}
+	-number = 1
+	while(number < 10) {
+		number = number + 1;
+		console.log(number)
+		}
+		//will log 2, 3, 4, 5, 6, 7, 8, 9, 10
+	}
